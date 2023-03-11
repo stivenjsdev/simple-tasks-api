@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "3833c81d-2d2a-4da0-9308-ca47be47e26b",
+		"name": "Stiven Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14648777"
+	},
+	"item": [
+		{
+			"name": "get all tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all tasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"99-QKaQXdWZWwYyCzszsPOIiAQ/LDM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:01:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"title\": \"first task\",\n        \"description\": \"some task\",\n        \"status\": \"PENDING\"\n    },\n    {\n        \"id\": \"2\",\n        \"title\": \"second task\",\n        \"description\": \"some task\",\n        \"status\": \"DONE\"\n    }\n]"
+				},
+				{
+					"name": "get all tasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-kvAUc6AYi0PyMFGjZewxgnRTfI8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:04:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"title\": \"first task\",\n        \"description\": \"some task\",\n        \"status\": \"PENDING\"\n    },\n    {\n        \"id\": \"2\",\n        \"title\": \"second task\",\n        \"description\": \"some task\",\n        \"status\": \"DONE\"\n    },\n    {\n        \"id\": \"401ac9a9-8132-4bf3-9a14-fe6959a9b113\",\n        \"title\": \"do something\",\n        \"description\": \"do it good\",\n        \"status\": \"PENDING\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"do something\",\r\n    \"description\": \"do it good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"do something\",\r\n    \"description\": \"do it good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "114"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"72-TDjjKZPPJQZB59/ommP4tHKLJIk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:03:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"401ac9a9-8132-4bf3-9a14-fe6959a9b113\",\n    \"title\": \"do something\",\n    \"description\": \"do it good\",\n    \"status\": \"PENDING\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tasks/1cdced93-d953-4529-a9ae-807ce4d65498",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"1cdced93-d953-4529-a9ae-807ce4d65498"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/1cdced93-d953-4529-a9ae-807ce4d65498",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"1cdced93-d953-4529-a9ae-807ce4d65498"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5b-OetKLq2SAVAxHXwEvQbKXADK6J8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:21:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Task with ID 1cdced93-d953-4529-a9ae-807ce4d65498 not found.\"\n}"
+				},
+				{
+					"name": "delete task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"25-unspc8ktiWKiQ4MIbMEVzn09JJw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:27:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task with ID: 2 deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update task",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"PENDING\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update task",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"PENDING\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "77"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4d-cv5TQmWEO8dkjd3U/oqLyJsEz6w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:08:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"2\",\n    \"title\": \"second task\",\n    \"description\": \"some task\",\n    \"status\": \"PENDING\"\n}"
+				},
+				{
+					"name": "update task",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"ASDF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-JSPG84I2HjkWz7Z191QWuPe4CmY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:08:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 400,\n    \"message\": [\n        \"status must be one of the following values: DONE, IN_PROGRESS, PENDING\"\n    ],\n    \"error\": \"Bad Request\"\n}"
+				},
+				{
+					"name": "update task",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69-9XMorN3loXtWYX+trxo6Jm4800o\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:09:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 400,\n    \"message\": [\n        \"title must be longer than or equal to 3 characters\"\n    ],\n    \"error\": \"Bad Request\"\n}"
+				},
+				{
+					"name": "update task",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"asdf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-PEpKvuyQHDoq3mc6fbFclmQUZmA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Mar 2023 04:26:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Task with ID 3 not found.\"\n}"
+				}
+			]
+		}
+	]
+}
