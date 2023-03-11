@@ -16,10 +16,9 @@ async function bootstrap() {
 
   //swagger
   const config = new DocumentBuilder()
-    .setTitle('Tasks example')
+    .setTitle('Tasks API')
     .setDescription('The Tasks API description')
     .setVersion('1.0')
-    .addTag('tasks')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
